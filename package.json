@@ -9,7 +9,7 @@
     "lint": "lerna run lint",
     "test": "lerna run test",
     "prepare": "husky install",
-    "start": "node ./server/dist/index.js"
+    "start": "NODE_ENV=production ts-node --project ./server/tsconfig.build.json ./server/src/index.ts"
   },
   "workspaces": [
     "client",
