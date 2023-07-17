@@ -34,7 +34,7 @@ if (config.nodeEnv === "production") {
   );
 }
 
-app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerDoc));
+// app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 app.use("/api", router);
 
 // NOTE: this middelware MUST be in last position, otherwise you will break the exception layer
